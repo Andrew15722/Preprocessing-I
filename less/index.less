@@ -85,21 +85,67 @@ header {
 }
 
 section {
-	background: yellowgreen;
+		background: #e8ebef;
 
 	.top-container {
 		width: 100%;
 		height: 71rem;
-	}
+		display: flex; // ask why when its flexed the margin stays at the top.
+		flex-direction: column;
 
-	.img {
-		background: violet;
-		background-image: url(/images/top-img.jpg);
-		background-position: center;
-		background-size: cover;
-		width: 30rem;
-		height: 30rem;
-		margin: 6.3rem 0 0 3.1rem ; 
+		.img {
+			background-image: url(/images/top-img.jpg);
+			background-position: center;
+			background-size: cover;
+			width: 30rem;
+			height: 30rem;
+			margin: 6.3rem 0 0 3.1rem;  
+		}
+
+		h1 {
+			font-size: 5rem;
+			margin: 1.1rem 0 0 3.1rem;
+		}
+
+		h3 {
+			font-size: 2rem;
+			margin-left: 3.3rem;
+			margin-top: 2rem;
+		}
+
+		hr {
+			width: 92%;
+			color:black;
+			margin-top: 2.9rem;
+		}
+
+		p {
+			font-size: 1.6rem;
+			margin-left: 3.2rem;
+			margin-top: 2.3rem;
+		}
+
+		.btn-top {
+			background:#4a4d51;
+			width: 15.5rem;
+			margin-left: 3.2rem; 
+			margin-top: 4.5rem;
+			padding: 1.2rem 0;
+			border-radius: .5rem;
+			color: white;
+			cursor: pointer;
+			border: none;
+			font-size: 2rem;
+
+		}
+
+		.btn-top:focus{
+			outline: none;
+		}
+
+		.btn-top:active {
+			border-style: none;
+		}
 	}
 }
 
