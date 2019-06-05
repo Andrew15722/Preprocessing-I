@@ -136,6 +136,9 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+.flex {
+  display: flex;
+}
 .container {
   max-width: 870px;
   margin: 0 auto;
@@ -153,16 +156,16 @@ header nav a {
   text-decoration: none;
   font-weight: 500;
 }
-section {
+.top {
   background: #e8ebef;
-}
-section .top-container {
   width: 100%;
   height: 71rem;
+}
+.top .top-container {
   display: flex;
   flex-direction: column;
 }
-section .top-container .img {
+.top .top-container .img {
   background-image: url(/images/top-img.jpg);
   background-position: center;
   background-size: cover;
@@ -170,26 +173,26 @@ section .top-container .img {
   height: 30rem;
   margin: 6.3rem 0 0 3.1rem;
 }
-section .top-container h1 {
+.top .top-container h1 {
   font-size: 5rem;
   margin: 1.1rem 0 0 3.1rem;
 }
-section .top-container h3 {
+.top .top-container h3 {
   font-size: 2rem;
   margin-left: 3.3rem;
   margin-top: 2rem;
 }
-section .top-container hr {
+.top .top-container hr {
   width: 92%;
   color: black;
   margin-top: 2.9rem;
 }
-section .top-container p {
+.top .top-container p {
   font-size: 1.6rem;
   margin-left: 3.2rem;
   margin-top: 2.3rem;
 }
-section .top-container .btn-top {
+.top .top-container .btn-top {
   background: #4a4d51;
   width: 15.5rem;
   margin-left: 3.2rem;
@@ -201,9 +204,96 @@ section .top-container .btn-top {
   border: none;
   font-size: 2rem;
 }
-section .top-container .btn-top:focus {
+.top .top-container .btn-top:focus {
   outline: none;
 }
-section .top-container .btn-top:active {
+.top .top-container .btn-top:active {
   border-style: none;
+}
+.middle {
+  width: 100%;
+  height: 62.3rem;
+}
+.middle .middle-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle .middle-container div {
+  width: 50%;
+  height: 34rem;
+}
+.middle .middle-container div h2 {
+  margin-top: 3.5rem;
+  width: 100%;
+  letter-spacing: -0.1rem;
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+.middle .middle-container div p {
+  margin-top: 0.5rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+.middle .middle-container .list {
+  display: flex;
+  width: 50%;
+  height: 34rem;
+  flex-flow: row wrap;
+}
+.middle .middle-container .list h3 {
+  margin-top: 3.5rem;
+  margin-left: 1.2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 100%;
+}
+.middle .middle-container .list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-left: 0.5rem;
+  margin-top: 0.9rem;
+  border-width: 1px solid black;
+}
+.middle .middle-container .list ul li {
+  font-size: 1.6rem;
+  border: solid black;
+  border-width: 1px 1px 0;
+  padding: 1.6rem 0;
+  font-weight: 500;
+  margin-left: 1rem;
+  padding-left: 2rem;
+}
+.middle .middle-container .list ul li:last-child {
+  border-bottom: 1px solid black;
+}
+.middle .middle-container .table {
+  width: 100%;
+  height: 28.4rem;
+}
+.middle .middle-container .table h3 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  letter-spacing: -0.1rem;
+  font-weight: 500;
+}
+.middle .middle-container .table hr {
+  margin-top: 1rem;
+  color: #4a4d51;
+  opacity: 0.1;
+}
+.middle .middle-container .table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.middle .middle-container .table table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.middle .middle-container .table table td,
+.middle .middle-container .table table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }

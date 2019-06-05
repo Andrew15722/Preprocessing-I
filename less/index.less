@@ -59,7 +59,14 @@ html, body {
 	font-size: 62.5%;
 }
 
-// My code starts here 
+// variables
+
+//mixins
+.flex {
+	display:flex;
+}
+
+// Header
 
 .container {
 	max-width: 870px;
@@ -71,7 +78,7 @@ header {
 	nav {
 		width: 100%;
 		height: 8.1rem;
-		display: flex;
+		.flex;
 		justify-content: flex-end;
 		align-items: center;
 
@@ -83,14 +90,14 @@ header {
 		}
 	}
 }
-
-section {
-		background: #e8ebef;
+ //////////////////// Top section//////////////////////////////
+.top {
+	background: #e8ebef;
+	width: 100%;
+	height: 71rem;
 
 	.top-container {
-		width: 100%;
-		height: 71rem;
-		display: flex; // ask why when its flexed the margin stays at the top.
+		.flex; // ask why when its flexed the margin stays at the top.
 		flex-direction: column;
 
 		.img {
@@ -149,3 +156,105 @@ section {
 	}
 }
 
+//////////////////////Middle Section//////////////////
+.middle {
+	width: 100%;
+	height: 62.3rem;
+	.middle-container {
+		.flex;
+		flex-wrap: wrap;
+		
+		div{
+			width:50%;
+			height:34rem;
+
+			h2 {
+				margin-top: 3.5rem;
+				width: 100%;
+				letter-spacing: -.1rem;
+				font-size: 3.4rem;
+				font-weight: 500;
+			}
+
+			p {
+				margin-top: .5rem;
+				line-height: 2.5rem;
+				font-size: 1.7rem;
+			}
+		}
+
+		.list {
+			.flex;
+			width: 50%;
+			height:34rem;
+			flex-flow: row wrap;
+
+			h3 {
+				margin-top: 3.5rem;
+				margin-left: 1.2rem;
+				font-size: 2.5rem;
+				font-weight: 500;
+				width : 100%;
+			}
+
+			ul{
+				.flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				margin-left: .5rem;
+				margin-top: .9rem;
+				border-width: 1px solid black;
+				
+				li {
+					font-size: 1.6rem;
+					border: solid black;
+					border-width: 1px 1px 0;
+					padding: 1.6rem 0;
+					font-weight: 500;
+					margin-left: 1rem;
+					padding-left: 2rem;
+				}
+
+				li:last-child {
+					border-bottom: 1px solid black;
+				}
+			}
+		}
+
+		.table {
+			width:100%;
+			height: 28.4rem;
+
+			h3 {
+				font-size: 2.5rem;
+				margin-top: 1.5rem;
+				letter-spacing: -.1rem;
+				font-weight: 500;
+			}
+
+			hr {
+				margin-top: 1rem;
+				color: #4a4d51;
+				opacity: 0.1;
+			}
+
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				font-size: 1.5rem;
+
+
+				tr:nth-child(even) {
+					background-color: #dddddd;
+				  }
+
+				td, th {
+					border: 1px solid #dddddd;
+					text-align: left;
+					padding: 8px;
+			  }
+			}
+		}
+	}
+}
