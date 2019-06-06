@@ -167,7 +167,7 @@ header nav a {
   flex-direction: column;
 }
 .top .top-container .img {
-  background-image: url(/images/top-img.jpg);
+  background-image: url(../images/top-img.jpg);
   background-position: center;
   background-size: cover;
   width: 30rem;
