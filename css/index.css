@@ -155,6 +155,7 @@ header nav a {
   font-size: 1.7rem;
   text-decoration: none;
   font-weight: 500;
+  color: black;
 }
 .top {
   background: #e8ebef;
@@ -286,14 +287,37 @@ header nav a {
 .middle .middle-container .table table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+.middle .middle-container .table table .strong {
+  font-weight: 700;
+  font-size: 2rem;
 }
 .middle .middle-container .table table tr:nth-child(even) {
   background-color: #dddddd;
 }
 .middle .middle-container .table table td,
 .middle .middle-container .table table th {
-  border: 1px solid #dddddd;
+  border-style: solid #dddddd;
   text-align: left;
   padding: 8px;
+  border-top: 1px solid #dddddd;
+}
+footer {
+  background: #4a4d51;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  font-size: 1.8rem;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #dddddd;
 }

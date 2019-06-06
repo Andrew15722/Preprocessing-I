@@ -60,7 +60,8 @@ html, body {
 }
 
 // variables
-
+@table-color: #dddddd;
+@grey-dark: #4a4d51;
 //mixins
 .flex {
 	display:flex;
@@ -87,6 +88,7 @@ header {
 			font-size: 1.7rem;
 			text-decoration: none;
 			font-weight: 500;
+			color: black;
 		}
 	}
 }
@@ -133,7 +135,7 @@ header {
 		}
 
 		.btn-top {
-			background:#4a4d51;
+			background:@grey-dark;
 			width: 15.5rem;
 			margin-left: 3.2rem; 
 			margin-top: 4.5rem;
@@ -242,19 +244,48 @@ header {
 			table {
 				border-collapse: collapse;
 				width: 100%;
-				font-size: 1.5rem;
+				font-size: 1.7rem;
+				margin-top: 1rem;
 
+				.strong {
+					font-weight: 700;
+					font-size: 2rem;
+				}
 
 				tr:nth-child(even) {
-					background-color: #dddddd;
+					background-color: @table-color;
 				  }
 
 				td, th {
-					border: 1px solid #dddddd;
+					border-style: solid @table-color;
 					text-align: left;
 					padding: 8px;
+					border-top: 1px solid @table-color;
 			  }
 			}
 		}
 	}
+}
+
+footer {
+	background: @grey-dark;
+	height: 8rem;
+	.flex;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		color: white;
+		font-size: 1.8rem;
+	}
+
+	a {
+		color: white;
+	}
+
+	a:hover {
+		color: @table-color;
+	}
+		
+	
 }
