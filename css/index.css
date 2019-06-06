@@ -1,1 +1,323 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.flex {
+  display: flex;
+}
+.container {
+  max-width: 870px;
+  margin: 0 auto;
+}
+header nav {
+  width: 100%;
+  height: 8.1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav a {
+  margin-left: 2.8rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+.top {
+  background: #e8ebef;
+  width: 100%;
+  height: 71rem;
+}
+.top .top-container {
+  display: flex;
+  flex-direction: column;
+}
+.top .top-container .img {
+  background-image: url(../images/top-img.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 30rem;
+  height: 30rem;
+  margin: 6.3rem 0 0 3.1rem;
+}
+.top .top-container h1 {
+  font-size: 5rem;
+  margin: 1.1rem 0 0 3.1rem;
+}
+.top .top-container h3 {
+  font-size: 2rem;
+  margin-left: 3.3rem;
+  margin-top: 2rem;
+}
+.top .top-container hr {
+  width: 92%;
+  color: black;
+  margin-top: 2.9rem;
+}
+.top .top-container p {
+  font-size: 1.6rem;
+  margin-left: 3.2rem;
+  margin-top: 2.3rem;
+}
+.top .top-container .btn-top {
+  background: #4a4d51;
+  width: 15.5rem;
+  margin-left: 3.2rem;
+  margin-top: 4.5rem;
+  padding: 1.2rem 0;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+}
+.top .top-container .btn-top:focus {
+  outline: none;
+}
+.top .top-container .btn-top:active {
+  border-style: none;
+}
+.middle {
+  width: 100%;
+  height: 62.3rem;
+}
+.middle .middle-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle .middle-container div {
+  width: 50%;
+  height: 34rem;
+}
+.middle .middle-container div h2 {
+  margin-top: 3.5rem;
+  width: 100%;
+  letter-spacing: -0.1rem;
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+.middle .middle-container div p {
+  margin-top: 0.5rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+.middle .middle-container .list {
+  display: flex;
+  width: 50%;
+  height: 34rem;
+  flex-flow: row wrap;
+}
+.middle .middle-container .list h3 {
+  margin-top: 3.5rem;
+  margin-left: 1.2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 100%;
+}
+.middle .middle-container .list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-left: 0.5rem;
+  margin-top: 0.9rem;
+  border-width: 1px solid black;
+}
+.middle .middle-container .list ul li {
+  font-size: 1.6rem;
+  border: solid black;
+  border-width: 1px 1px 0;
+  padding: 1.6rem 0;
+  font-weight: 500;
+  margin-left: 1rem;
+  padding-left: 2rem;
+}
+.middle .middle-container .list ul li:last-child {
+  border-bottom: 1px solid black;
+}
+.middle .middle-container .table {
+  width: 100%;
+  height: 28.4rem;
+}
+.middle .middle-container .table h3 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  letter-spacing: -0.1rem;
+  font-weight: 500;
+}
+.middle .middle-container .table hr {
+  margin-top: 1rem;
+  color: #4a4d51;
+  opacity: 0.1;
+}
+.middle .middle-container .table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+.middle .middle-container .table table .strong {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.middle .middle-container .table table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.middle .middle-container .table table td,
+.middle .middle-container .table table th {
+  border-style: solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-top: 1px solid #dddddd;
+}
+footer {
+  background: #4a4d51;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  font-size: 1.8rem;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #dddddd;
+}

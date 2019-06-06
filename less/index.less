@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Roboto', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +55,237 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+// variables
+@table-color: #dddddd;
+@grey-dark: #4a4d51;
+//mixins
+.flex {
+	display:flex;
+}
+
+// Header
+
+.container {
+	max-width: 870px;
+	margin: 0 auto;
+}
+
+header {
+	
+	nav {
+		width: 100%;
+		height: 8.1rem;
+		.flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		a {
+			margin-left:2.8rem;
+			font-size: 1.7rem;
+			text-decoration: none;
+			font-weight: 500;
+			color: black;
+		}
+	}
+}
+ //////////////////// Top section//////////////////////////////
+.top {
+	background: #e8ebef;
+	width: 100%;
+	height: 71rem;
+
+	.top-container {
+		.flex; // ask why when its flexed the margin stays at the top.
+		flex-direction: column;
+
+		.img {
+			background-image: url(../images/top-img.jpg);
+			background-position: center;
+			background-size: cover;
+			width: 30rem;
+			height: 30rem;
+			margin: 6.3rem 0 0 3.1rem;  
+		}
+
+		h1 {
+			font-size: 5rem;
+			margin: 1.1rem 0 0 3.1rem;
+		}
+
+		h3 {
+			font-size: 2rem;
+			margin-left: 3.3rem;
+			margin-top: 2rem;
+		}
+
+		hr {
+			width: 92%;
+			color:black;
+			margin-top: 2.9rem;
+		}
+
+		p {
+			font-size: 1.6rem;
+			margin-left: 3.2rem;
+			margin-top: 2.3rem;
+		}
+
+		.btn-top {
+			background:@grey-dark;
+			width: 15.5rem;
+			margin-left: 3.2rem; 
+			margin-top: 4.5rem;
+			padding: 1.2rem 0;
+			border-radius: .5rem;
+			color: white;
+			cursor: pointer;
+			border: none;
+			font-size: 2rem;
+
+		}
+
+		.btn-top:focus{
+			outline: none;
+		}
+
+		.btn-top:active {
+			border-style: none;
+		}
+	}
+}
+
+//////////////////////Middle Section//////////////////
+.middle {
+	width: 100%;
+	height: 62.3rem;
+	.middle-container {
+		.flex;
+		flex-wrap: wrap;
+		
+		div{
+			width:50%;
+			height:34rem;
+
+			h2 {
+				margin-top: 3.5rem;
+				width: 100%;
+				letter-spacing: -.1rem;
+				font-size: 3.4rem;
+				font-weight: 500;
+			}
+
+			p {
+				margin-top: .5rem;
+				line-height: 2.5rem;
+				font-size: 1.7rem;
+			}
+		}
+
+		.list {
+			.flex;
+			width: 50%;
+			height:34rem;
+			flex-flow: row wrap;
+
+			h3 {
+				margin-top: 3.5rem;
+				margin-left: 1.2rem;
+				font-size: 2.5rem;
+				font-weight: 500;
+				width : 100%;
+			}
+
+			ul{
+				.flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				margin-left: .5rem;
+				margin-top: .9rem;
+				border-width: 1px solid black;
+				
+				li {
+					font-size: 1.6rem;
+					border: solid black;
+					border-width: 1px 1px 0;
+					padding: 1.6rem 0;
+					font-weight: 500;
+					margin-left: 1rem;
+					padding-left: 2rem;
+				}
+
+				li:last-child {
+					border-bottom: 1px solid black;
+				}
+			}
+		}
+
+		.table {
+			width:100%;
+			height: 28.4rem;
+
+			h3 {
+				font-size: 2.5rem;
+				margin-top: 1.5rem;
+				letter-spacing: -.1rem;
+				font-weight: 500;
+			}
+
+			hr {
+				margin-top: 1rem;
+				color: #4a4d51;
+				opacity: 0.1;
+			}
+
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				font-size: 1.7rem;
+				margin-top: 1rem;
+
+				.strong {
+					font-weight: 700;
+					font-size: 2rem;
+				}
+
+				tr:nth-child(even) {
+					background-color: @table-color;
+				  }
+
+				td, th {
+					border-style: solid @table-color;
+					text-align: left;
+					padding: 8px;
+					border-top: 1px solid @table-color;
+			  }
+			}
+		}
+	}
+}
+
+footer {
+	background: @grey-dark;
+	height: 8rem;
+	.flex;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		color: white;
+		font-size: 1.8rem;
+	}
+
+	a {
+		color: white;
+	}
+
+	a:hover {
+		color: @table-color;
+	}
+		
+	
+}
